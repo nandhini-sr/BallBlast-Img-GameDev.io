@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ball Blast Game</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<!--Buttons-->
+	<img id="playBtn" class="btn" src="images/playBtn.png" width="150px" height="50px" onclick="setJS('hackerImages.js')">
+	<img id="tryAgainBtn" class="btn" src="images/tryAgainBtn.png" width="200px" height="75px" onclick="location.href='index.html'">
+    <!--Sound-->
+	<audio id="sound" src="sound/sound.mp3"></audio>
+	<!--Cannon Image-->
+	<img id="cannon" class="btn" src="images/cannon.PNG" style="display:none;">
+	<!--Bullet Image-->
+	<img id="bullet" class="btn" src="images/bullet.PNG" style="display:none;">
+    <!--Rock Image-->
+    <img id="rock1" class="btn" src="images/rock1.PNG" style="display:none;">
+    <img id="rock3" class="btn" src="images/rock3.PNG" style="display:none;">
+    <img id="rock7" class="btn" src="images/rock7.PNG" style="display:none;">
+    <img id="rock14" class="btn" src="images/rock14.PNG" style="display:none;">
+    <img id="rock15" class="btn" src="images/rock15.PNG" style="display:none;">
+    <img id="rock22" class="btn" src="images/rock22.PNG" style="display:none;">
+    <img id="rock28" class="btn" src="images/rock28.PNG" style="display:none;">
+    <img id="rock30" class="btn" src="images/rock30.PNG" style="display:none;">
+    <img id="rock44" class="btn" src="images/rock44.PNG" style="display:none;">
+    <img id="rock46" class="btn" src="images/rock46.PNG" style="display:none;">
+
+
+
+
+<script>
+	var canvas = document.querySelector('canvas'); 
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth/2;
+
+    var c = canvas.getContext('2d');  
+    
+	function setJS(fileName){
+	var element = document.createElement('script');
+	element.type = "text/javascript";
+	element.src = "javascript/"+fileName; 
+	document.body.appendChild(element);
+
+}
+</script>
+	
+<script type="text/javascript" src="javascript/setGame.js"></script>
+</body>
+</html>

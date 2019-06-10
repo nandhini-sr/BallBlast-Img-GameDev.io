@@ -1,0 +1,19 @@
+#canvas{
+	border: 1px solid black;
+		}
+
+		.btn{
+			position:absolute;
+			left:200px;
+		}
+        #tryAgainBtn{
+			left:250px;
+			top:300px;
+			display:none;
+		}
+		#playBtn{
+			left:18%;
+			top:180px;
+		}
+
+	
